@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/absisimg?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="Model/Absence.hbm.xml"/>
+    <mapping resource="Model/Matiere.hbm.xml"/>
+    <mapping resource="Model/EnseignantModule.hbm.xml"/>
+    <mapping resource="Model/Module.hbm.xml"/>
+    <mapping resource="Model/Etudiant.hbm.xml"/>
+    <mapping resource="Model/Utilisateur.hbm.xml"/>
+    <mapping resource="Model/Elimine.hbm.xml"/>
+    <mapping resource="Model/Absenseignant.hbm.xml"/>
+    <mapping resource="Model/Classe.hbm.xml"/>
+    <mapping resource="Model/Semester.hbm.xml"/>
+    <mapping resource="Model/Authentification.hbm.xml"/>
+    <mapping resource="Model/TypeUtilisateur.hbm.xml"/>
+    <mapping resource="Model/Admin.hbm.xml"/>
+    <mapping resource="Model/Seancematiere.hbm.xml"/>
+    <mapping resource="Model/Seance.hbm.xml"/>
+    <mapping resource="Model/Enseignant.hbm.xml"/>
+    <mapping resource="Model/TypeSeance.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2016 10:18:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.TypeSeance" table="type_seance" catalog="absisimg" optimistic-lock="version">
+        <id name="idTypes" type="java.lang.Integer">
+            <column name="id_types" />
+            <generator class="identity" />
+        </id>
+        <property name="libelle" type="string">
+            <column name="libelle" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

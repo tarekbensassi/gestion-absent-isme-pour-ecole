@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 8, 2016 4:55:59 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Absenseignant" table="absenseignant" catalog="absisimg" optimistic-lock="version">
+        <id name="idAbs" type="java.lang.Integer">
+            <column name="id_abs" />
+            <generator class="identity" />
+        </id>
+        <property name="idEnseignant" type="int">
+            <column name="id_enseignant" not-null="true" />
+        </property>
+        <property name="dateseance" type="date">
+            <column name="dateseance" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

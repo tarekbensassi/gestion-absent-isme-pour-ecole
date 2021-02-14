@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 avr. 2014 14:58:19 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Pojo.Messages" table="messages" catalog="bd_moteur_rech">
+        <id name="idMessages" type="java.lang.Integer">
+            <column name="id_messages" />
+            <generator class="identity" />
+        </id>
+        <property name="titre" type="string">
+            <column name="titre" length="50" not-null="true" />
+        </property>
+        <property name="contenu" type="string">
+            <column name="contenu" length="500" not-null="true" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="30" not-null="true" />
+        </property>
+        <property name="idDestinataire" type="int">
+            <column name="id_destinataire" not-null="true" />
+        </property>
+        <property name="idExpideteur" type="int">
+            <column name="id_expideteur" not-null="true" />
+        </property>
+        <property name="typeDestinataire" type="int">
+            <column name="type_destinataire" not-null="true" />
+        </property>
+        <property name="typeExpideteur" type="int">
+            <column name="type_expideteur" not-null="true" />
+        </property>
+        <property name="etat" type="int">
+            <column name="etat" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

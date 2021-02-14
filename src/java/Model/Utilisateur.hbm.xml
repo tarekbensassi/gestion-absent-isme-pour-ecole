@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2016 10:18:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Utilisateur" table="utilisateur" catalog="absisimg" optimistic-lock="version">
+        <id name="idUtilisateur" type="java.lang.Integer">
+            <column name="id_utilisateur" />
+            <generator class="identity" />
+        </id>
+        <property name="nom" type="string">
+            <column name="nom" length="15" not-null="true" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="prenom" length="15" not-null="true" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="adresse" length="50" not-null="true" />
+        </property>
+        <property name="tel" type="int">
+            <column name="tel" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="15" not-null="true" />
+        </property>
+        <property name="idType" type="int">
+            <column name="id_type" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

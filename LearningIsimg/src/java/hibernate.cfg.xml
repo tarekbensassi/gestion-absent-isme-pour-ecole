@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bd_moteur_rech?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="Pojo/Messages.hbm.xml"/>
+    <mapping resource="Pojo/NiveauEtude.hbm.xml"/>
+    <mapping resource="Pojo/Etudiant.hbm.xml"/>
+    <mapping resource="Pojo/DocumentTd.hbm.xml"/>
+    <mapping resource="Pojo/Filiere.hbm.xml"/>
+    <mapping resource="Pojo/DocumentCours.hbm.xml"/>
+    <mapping resource="Pojo/Admin.hbm.xml"/>
+    <mapping resource="Pojo/Matiers.hbm.xml"/>
+    <mapping resource="Pojo/DocumentTp.hbm.xml"/>
+    <mapping resource="Pojo/Enseignant.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

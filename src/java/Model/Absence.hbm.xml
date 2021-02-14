@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 15, 2016 8:15:29 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Absence" table="absence" catalog="absisimg" optimistic-lock="version">
+        <id name="idabs" type="java.lang.Integer">
+            <column name="idabs" />
+            <generator class="identity" />
+        </id>
+        <property name="idetudiant" type="int">
+            <column name="idetudiant" not-null="true" />
+        </property>
+        <property name="idmat" type="int">
+            <column name="idmat" not-null="true" />
+        </property>
+        <property name="datemat" type="date">
+            <column name="datemat" length="10" not-null="true" />
+        </property>
+        <property name="idsems" type="int">
+            <column name="idsems" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

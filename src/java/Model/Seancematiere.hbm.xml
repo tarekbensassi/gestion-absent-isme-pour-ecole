@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2016 10:18:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Seancematiere" table="seancematiere" catalog="absisimg" optimistic-lock="version">
+        <id name="idSeanceMatiere" type="java.lang.Integer">
+            <column name="id_seance_matiere" />
+            <generator class="identity" />
+        </id>
+        <property name="nbSeanceCr" type="int">
+            <column name="nb_seance_cr" not-null="true" />
+        </property>
+        <property name="nbSeanceTp" type="int">
+            <column name="nb_seance_tp" not-null="true" />
+        </property>
+        <property name="nbSeanceTd" type="int">
+            <column name="nb_seance_td" not-null="true" />
+        </property>
+        <property name="nbSeance" type="int">
+            <column name="nb_seance" not-null="true" />
+        </property>
+        <property name="idMatiere" type="int">
+            <column name="id_matiere" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

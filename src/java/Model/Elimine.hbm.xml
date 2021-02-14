@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2016 10:18:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Elimine" table="elimine" catalog="absisimg" optimistic-lock="version">
+        <id name="idElimine" type="java.lang.Integer">
+            <column name="id_elimine" />
+            <generator class="identity" />
+        </id>
+        <property name="idEtudiant" type="int">
+            <column name="id_etudiant" not-null="true" />
+        </property>
+        <property name="idMatiere" type="int">
+            <column name="id_matiere" not-null="true" />
+        </property>
+        <property name="ndAbscr" type="int">
+            <column name="nd_abscr" not-null="true" />
+        </property>
+        <property name="ndAbstp" type="int">
+            <column name="nd_abstp" not-null="true" />
+        </property>
+        <property name="ndAbstd" type="int">
+            <column name="nd_abstd" not-null="true" />
+        </property>
+        <property name="idSemester" type="int">
+            <column name="id_semester" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

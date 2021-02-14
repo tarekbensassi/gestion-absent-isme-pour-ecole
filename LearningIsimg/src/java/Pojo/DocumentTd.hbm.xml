@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 avr. 2014 14:58:19 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Pojo.DocumentTd" table="document_td" catalog="bd_moteur_rech">
+        <id name="idDocumentTd" type="java.lang.Integer">
+            <column name="id_document_td" />
+            <generator class="identity" />
+        </id>
+        <property name="nom" type="string">
+            <column name="nom" length="50" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="250" not-null="true" />
+        </property>
+        <property name="fichierJointe" type="string">
+            <column name="fichier_jointe" length="100" not-null="true" />
+        </property>
+        <property name="dateAjout" type="string">
+            <column name="date_ajout" length="50" not-null="true" />
+        </property>
+        <property name="matiere" type="string">
+            <column name="matiere" length="50" not-null="true" />
+        </property>
+        <property name="niveau" type="int">
+            <column name="niveau" not-null="true" />
+        </property>
+        <property name="filliere" type="string">
+            <column name="filliere" length="100" not-null="true" />
+        </property>
+        <property name="idEnseignant" type="int">
+            <column name="id_enseignant" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
